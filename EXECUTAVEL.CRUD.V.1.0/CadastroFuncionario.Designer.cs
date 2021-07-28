@@ -29,11 +29,11 @@ namespace EXECUTAVEL.CRUD.V._1._0 {
             this.lblSalário = new System.Windows.Forms.Label();
             this.lblSexo = new System.Windows.Forms.Label();
             this.lblContrato = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnSalvar = new System.Windows.Forms.Button();
             this.lblError = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.txtNome = new System.Windows.Forms.TextBox();
+            this.txtEmail = new System.Windows.Forms.TextBox();
+            this.txtSalario = new System.Windows.Forms.TextBox();
             this.rbMasculino = new System.Windows.Forms.RadioButton();
             this.rbFeminino = new System.Windows.Forms.RadioButton();
             this.rbClt = new System.Windows.Forms.RadioButton();
@@ -90,45 +90,46 @@ namespace EXECUTAVEL.CRUD.V._1._0 {
             this.lblContrato.TabIndex = 4;
             this.lblContrato.Text = "Tipo de contrato:";
             // 
-            // button1
+            // btnSalvar
             // 
-            this.button1.Location = new System.Drawing.Point(13, 472);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(89, 43);
-            this.button1.TabIndex = 6;
-            this.button1.Text = "button1";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btnSalvar.Location = new System.Drawing.Point(13, 472);
+            this.btnSalvar.Name = "btnSalvar";
+            this.btnSalvar.Size = new System.Drawing.Size(89, 43);
+            this.btnSalvar.TabIndex = 6;
+            this.btnSalvar.Text = "Salvar";
+            this.btnSalvar.UseVisualStyleBackColor = true;
+            this.btnSalvar.Click += new System.EventHandler(this.SalvarAction);
             // 
             // lblError
             // 
             this.lblError.AutoSize = true;
             this.lblError.ForeColor = System.Drawing.Color.Red;
-            this.lblError.Location = new System.Drawing.Point(357, 194);
+            this.lblError.Location = new System.Drawing.Point(358, 217);
             this.lblError.Name = "lblError";
             this.lblError.Size = new System.Drawing.Size(35, 13);
             this.lblError.TabIndex = 5;
             this.lblError.Text = "label6";
             // 
-            // textBox1
+            // txtNome
             // 
-            this.textBox1.Location = new System.Drawing.Point(15, 34);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(274, 20);
-            this.textBox1.TabIndex = 7;
+            this.txtNome.Location = new System.Drawing.Point(15, 34);
+            this.txtNome.Name = "txtNome";
+            this.txtNome.Size = new System.Drawing.Size(274, 20);
+            this.txtNome.TabIndex = 7;
             // 
-            // textBox2
+            // txtEmail
             // 
-            this.textBox2.Location = new System.Drawing.Point(15, 114);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(274, 20);
-            this.textBox2.TabIndex = 8;
+            this.txtEmail.Location = new System.Drawing.Point(15, 114);
+            this.txtEmail.Name = "txtEmail";
+            this.txtEmail.Size = new System.Drawing.Size(274, 20);
+            this.txtEmail.TabIndex = 8;
             // 
-            // textBox3
+            // txtSalario
             // 
-            this.textBox3.Location = new System.Drawing.Point(13, 210);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(100, 20);
-            this.textBox3.TabIndex = 9;
+            this.txtSalario.Location = new System.Drawing.Point(13, 210);
+            this.txtSalario.Name = "txtSalario";
+            this.txtSalario.Size = new System.Drawing.Size(100, 20);
+            this.txtSalario.TabIndex = 9;
             // 
             // rbMasculino
             // 
@@ -213,10 +214,10 @@ namespace EXECUTAVEL.CRUD.V._1._0 {
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(890, 523);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.txtSalario);
+            this.Controls.Add(this.txtEmail);
+            this.Controls.Add(this.txtNome);
+            this.Controls.Add(this.btnSalvar);
             this.Controls.Add(this.lblError);
             this.Controls.Add(this.lblSalário);
             this.Controls.Add(this.lblEmail);
@@ -224,7 +225,7 @@ namespace EXECUTAVEL.CRUD.V._1._0 {
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.groupBox2);
             this.Name = "CadastroFuncionario";
-            this.Text = "CadastroFuncionario";
+            this.Text = "Cadastro de Funcionário";
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.groupBox2.ResumeLayout(false);
@@ -241,11 +242,11 @@ namespace EXECUTAVEL.CRUD.V._1._0 {
         private System.Windows.Forms.Label lblSalário;
         private System.Windows.Forms.Label lblSexo;
         private System.Windows.Forms.Label lblContrato;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnSalvar;
         private System.Windows.Forms.Label lblError;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox txtNome;
+        private System.Windows.Forms.TextBox txtEmail;
+        private System.Windows.Forms.TextBox txtSalario;
         private System.Windows.Forms.RadioButton rbMasculino;
         private System.Windows.Forms.RadioButton rbFeminino;
         private System.Windows.Forms.RadioButton rbClt;

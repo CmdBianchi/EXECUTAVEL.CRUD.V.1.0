@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-namespace EXECUTAVEL.CRUD.V._1._0.MODELO {
+namespace Modelo {
     class Funcionario { // --- > CLASSES DA TABELA CRIADA
         public int Id { get; set; }
         public string Nome { get; set; }

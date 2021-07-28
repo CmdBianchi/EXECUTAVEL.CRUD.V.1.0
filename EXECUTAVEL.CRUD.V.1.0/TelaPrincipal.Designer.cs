@@ -39,6 +39,7 @@ namespace EXECUTAVEL.CRUD.V._1._0 {
             this.btnNovo.TabIndex = 0;
             this.btnNovo.Text = "Novo";
             this.btnNovo.UseVisualStyleBackColor = true;
+            this.btnNovo.Click += new System.EventHandler(this.NovoAction);
             // 
             // btnEditar
             // 
